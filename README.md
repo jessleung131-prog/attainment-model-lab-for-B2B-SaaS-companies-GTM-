@@ -49,8 +49,20 @@ All organizations, people, accounts, values, model results, and recommendations 
 ## Files
 
 - `index.html` — self-contained interactive dashboard
+- `modeling/attainment_lab.py` — Python reference implementation for all four modeling stages
 - `README.md` — project overview and methodology
 - `.github/workflows/pages.yml` — GitHub Pages deployment
+
+## Run the Python model
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python -m modeling.attainment_lab
+```
+
+The script generates synthetic point-in-time data, validates the attainment model chronologically, allocates quota to the financial plan, and exports Enterprise and CS carving recommendations to `outputs/`.
 
 ## Use locally
 
