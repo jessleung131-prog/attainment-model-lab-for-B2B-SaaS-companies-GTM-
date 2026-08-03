@@ -1,0 +1,25 @@
+quota:
+  financial_plan_m: 24.0
+  coverage_factor: 1.15
+  target_attainment: 0.80
+  max_change: 0.25
+  review_threshold: 0.85
+  rebalance_threshold: 0.70
+
+enterprise_carving:
+  max_move_rate: 0.18
+  max_accounts_per_territory: 24
+  protect_named_accounts: true
+  protect_late_stage_pipeline: true
+  preserve_region: true
+
+customer_success_carving:
+  max_moves: 8
+  protect_near_term_renewals: true
+  protect_specialist_relationships: true
+  objectives:
+    - managed_arr
+    - risk_adjusted_arr
+    - expansion_potential
+    - workload
+
