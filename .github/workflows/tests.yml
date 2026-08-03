@@ -16,4 +16,4 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: python run_pipeline.py
-      - run: pytest -q
+      - run: python -m pytest -q
